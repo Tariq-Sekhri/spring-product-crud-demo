@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>login</title>
+</head>
+<body>
+<h1>
+<img src="../static/images/spring-boot-logo.png" th:src="@{/images/spring-boot-logo.png}" width="100px" height="100px"/>
+login
+</h1>
+<form method="post" th:action="@{/login}">
+	<div th:if="${param.error}">
+		<div class="error">
+			invalid credentials
+		</div>
+	</div>
+	
+	<div th:if="${param.logout}">
+		<div class="success">
+		you have been logged out
+		</div>
+	</div>	
+	Email: <input type="text" name="username"/><br>
+	password: <input type="password" name="password" /><br>
+	<input type="submit" value="log in" name="login-submit">
+</form>
+<p><a th:href="@{/}">back to home page</a></p>
+<p>Dont Have an account? sign up <a th:href="@{/register}">here</a>. </p>
+</body>
+</html>

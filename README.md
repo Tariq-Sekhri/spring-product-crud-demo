@@ -51,9 +51,7 @@ Then visit: [http://localhost:8080](http://localhost:8080)
 This repo includes a `keystore.p12` file for demo purposes only.  
 **Do not reuse this keystore in production environments.**
 
-If you don't mind people doing whatever they want with your code, the **MIT License** is a great choice. It’s permissive, allowing anyone to modify, distribute, and use the code as they please, with very few restrictions.
 
-Here’s the MIT license text you can add to your README:
 
 ---
 
